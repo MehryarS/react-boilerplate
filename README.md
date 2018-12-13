@@ -30,6 +30,8 @@ This is a basic boilerplate and very simple. Some important plugins installed. Y
 24. react-router-dom
 25. redux
 26. react-router-redux
+27. eslint
+28. prettier
 
 ## Usage
 

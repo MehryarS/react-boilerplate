@@ -5,22 +5,26 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.prod.js",
-    "dev": "webpack --watch --config webpack.dev.js & webpack-dev-server --config webpack.dev.js"
+    "build": "prettier webpack --config webpack.prod.js",
+    "dev": "prettier webpack-dev-server --config webpack.dev.js"
   },
   "author": "MEHRYĀR.S <me@mehryars.com> (http://www.mehryars.com)",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
+    "eslint-plugin-prettier": "^3.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.10.0",
+    "prettier": "^1.15.3",
+    "prettier-eslint": "^8.8.2",
     "redux-devtools": "^3.4.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
@@ -30,7 +34,11 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "clean-webpack-plugin": "^1.0.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
